@@ -120,7 +120,7 @@ contains(names, 'Colt', function(result){
 */
 
 function uniq(array, callback){
-  
+  return callback = Array.from(new Set(array))
 }
 
 // Do not edit the code below.
@@ -138,7 +138,9 @@ uniq(names, function(uniqArr){
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
 
-//Code Here 
+function each(names, callback){
+  return callback(names.index)
+}
 
 // Do not edit the code below.
 each(names, function(item, indice){
@@ -155,7 +157,9 @@ each(names, function(item, indice){
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 
-// Code here
+function getUserById(users,id,callback){
+  return callback = users && id
+}
 
 // Do not edit the code below.
 var users = [
